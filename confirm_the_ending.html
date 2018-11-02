@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="box"></div>
+  <script type="text/javascript">
+   
+//METHOD-1
+   /*function confirmEnding(str, target) {
+  if(str.endsWith(target)){
+    return true;
+  }
+  return false;
+}
+
+confirmEnding("Bastian", "n");
+*/
+//METHOD-2
+function confirmEnding(str, target) {
+  /* if(str.endsWith(target)){
+    return true;
+  }
+  return false;
+ */
+
+ if(str.substr(-target.length) === target){
+  console.log(str.substr(-target.length));
+  return true;
+  //Another method
+
+  //return str.slice(-target.length) === target;
+
+ }
+   return false;
+
+
+}
+
+confirmEnding("Bastian", "n");
+
+  </script>
+</body>
+</html>
